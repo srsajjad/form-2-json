@@ -8,7 +8,7 @@ npm install form-2-json
 
 
 ```js
-import form2json from 'from-2-json'
+import form2json from 'form-2-json'
 ```
 
 then inside your form-submission callback function, call the imported
