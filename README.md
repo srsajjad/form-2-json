@@ -3,6 +3,11 @@
 ## a small module to transform form data into json
 
 ```js
+npm install form-2-json
+```
+
+
+```js
 import form2json from 'from-2-json'
 ```
 
