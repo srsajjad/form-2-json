@@ -1,6 +1,6 @@
 {
   "name": "form-2-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a small module to transform form data to json",
   "main": "index.js",
   "scripts": {
