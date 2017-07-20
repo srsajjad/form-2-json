@@ -2,7 +2,7 @@
 
 ## a small module to transform form data into json
 
-```js
+```sh
 npm install form-2-json
 ```
 
