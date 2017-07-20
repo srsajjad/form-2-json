@@ -1,0 +1,24 @@
+{
+  "name": "form-2-json",
+  "version": "1.0.1",
+  "description": "a small module to transform form data to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsajjad/form-2-json.git"
+  },
+  "keywords": [
+    "form",
+    "json",
+    "form-2-json"
+  ],
+  "author": "“SR <“sajjadsr001@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srsajjad/form-2-json/issues"
+  },
+  "homepage": "https://github.com/srsajjad/form-2-json#readme"
+}
