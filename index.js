@@ -1,19 +1,20 @@
-let form2json = x => {
-  let formData = new window.FormData(x)
-  let obj = {}
-  let myJSON
+module.exports = form => {
+  const { FormData } = window
+  if (typeof FormData === 'undefined') {
+    throw new Error('Your browser doesn\'t support FormData API')
+  }
 
-  new Set(Array.from(formData.keys())).forEach((n, i) => {
-    let valueArr = formData.getAll(n)
-    if (valueArr.length === 1) {
-      obj[n] = valueArr[0]
+  const myData = new FormData(form)
+  const obj = {}
+
+  for (item of myData) {
+    const [key, val] = item
+    if (obj.hasOwnProperty(key) {
+        obj[key] = [].concat(obj[key], val)
+    } else {
+       obj[key] = val
     }
-    if (valueArr.length > 1) {
-      obj[n] = valueArr
-    }
-  })
-  myJSON = JSON.stringify(obj, null, 2)
-  return myJSON
+  }
+
+  return JSON.stringify(obj, null, 2)
 }
-
-module.exports = form2json
