@@ -1,9 +1,6 @@
 # form-2-json
 
-## A small module to transform form data to JSON
-
-## This is the Promise version of the package
-
+## A module to transform form data to JSON
 
 Usage
 ===
