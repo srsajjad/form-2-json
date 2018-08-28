@@ -1,46 +1,29 @@
-# form-2-json
+```yarn add form-2-json```
 
-## A module to transform form data to JSON
+## input fields inside the form, must have ```name``` attribute
 
-Usage
-===
+```<input name='age' />```
 
-Install the package
-
-```sh
-npm install form-2-json --save
+```javascript
+import { form2json } from 'form-2-json'
 ```
 
-Import it
-```js
-import f2j from 'form-2-json'
+```javascript
+form2json(event.target)
 ```
 
-Use it
-```js
+this function will return a json
+
+## Example
+
+```javascript
+document.querySelecor('form').addEventListener('submit', handleSubmit)
+```
+
+```javascript
 function handleSubmit (e) {
   e.preventDefault()
-
-  f2j(e.target, null, 2).then(json => {
-    // do whatever you want with the stringified json
-  })
-}
-
-
-...addEventListener('submit', handleSubmit)
-```
-
-Or using async-await
-```js
-async function handleSubmit (e) {
-  e.preventDefault()
-
-  const json = await f2j(e.target, null, 4) // format the json with 4-space indent
-  // do whatever
+  let myjson = form2json(e.target)
+  console.log(myjson)
 }
 ```
-
-In both of those examples we pass 3 arguments,  
-**First**, The form element (referenced through event target)
-
-The last 2 arguments are arguments for `JSON.stringify` and are passed directly to that function call
