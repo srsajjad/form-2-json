@@ -1,6 +1,6 @@
 ```yarn add form-2-json```
 
-## input fields inside the form, must have ```name``` attribute
+input fields inside the form, must have ```name``` attribute, like -
 
 ```<input name='age' />```
 
